@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body styles */
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Header styles */
+header {
+    background-color: #38363b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;    
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.navbar-logo {
+    font-weight: 700;
+    font-style: italic;
+    color: maroon;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-logo span {
+    color: whitesmoke; /* Atur warna teks pada elemen span */
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgb(250, 214, 255);
+}
+
+article {
+    flex: 2;
+    margin-right: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px; 
+}
+
+aside {
+    flex:0.8;
+    margin-left: 30px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;    
+    font-family: f;
+    background-color: #f4f4f4;
+}
+
+aside h2 {
+        text-align: center;
+        font-size: 30px;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+    border-radius: 20px; 
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 920px) {
+    main {
+        flex-direction: column;
+        margin: 20px;
+        padding: 30px;        
+    }
+
+    article {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        flex: 100%;
+        margin-top: 0;
+    }
+}
